@@ -22,3 +22,6 @@ print(resultado6)
 
 resultado7 = num1 ** num2
 print(resultado7)
+
+resultado8 = num1 + num2 * num2
+print(resultado8)
