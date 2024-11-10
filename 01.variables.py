@@ -14,3 +14,6 @@ print(variable_boolean)
 my_int_to_str_variable = str(variable_int)
 print(my_int_to_str_variable)
 print(type(my_int_to_str_variable))
+
+#CONCATENAR DISTINTAS VARIABLES
+print(variable_int, variable_string, variable_boolean)
