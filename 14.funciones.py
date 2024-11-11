@@ -12,3 +12,7 @@ def suma(numero1, numero2):
     total = numero1 + numero2
     print(f"La suma es:  {numero1} + {numero2} = {total}")
 suma(1,3)
+
+def saludo2(nombre, apellido="Varela"):
+    print(f"Hola {nombre} {apellido}")
+saludo2("Randy", "mamola")
