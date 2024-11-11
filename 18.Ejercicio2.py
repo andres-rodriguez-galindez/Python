@@ -22,7 +22,7 @@ def main():
     print("Bienvenido a tu tienda")
 nombre_producto = input("ingresa el nombre del producto: ")
 cantidad = int(input("Ingresa la cantidad comprada: "))
-preciounitario = int(input("ingrese el precio unitario: "))
+preciounitario = float(input("ingrese el precio unitario: "))
 
 if cantidad <= 0 or preciounitario <=0:
     print("El importe introducido no es correcto")
@@ -31,12 +31,12 @@ else:
     impuesto_ventas = precio_total * 0.21
     precio_total_con_impuesto = precio_total + impuesto_ventas
 
-print("Resumen de la compra: ")
-print(f"Producto: {nombre_producto}")
-print(f"Cantidad: {cantidad}")
-print(f"Precio Unitario: {preciounitario}")
-print(f"Precio total: {precio_total}")
-print(f"IVA (9%): {impuesto_ventas}")
-print(f"Total con impuestos: {precio_total_con_impuesto}")
+    print("Resumen de la compra: ")
+    print(f"Producto: {nombre_producto}")
+    print(f"Cantidad: {cantidad}")
+    print(f"Precio Unitario: {preciounitario:.2f} $")
+    print(f"Precio total: {precio_total:.2f} $")
+    print(f"IVA (9%): {impuesto_ventas:.2f} $")
+    print(f"Total con impuestos: {precio_total_con_impuesto:.2f} $")
 
 main()
